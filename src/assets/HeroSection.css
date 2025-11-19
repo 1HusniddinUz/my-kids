@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+#HeroSection {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 10vh 0px 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Title */
+.hero_text {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero_text h1 {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  /* responsiv font-size */
+  font-size: 10rem;
+  line-height: 1.1;
+  color: #000;
+}
+
+/* Background block */
+.hero_content {
+  width: 100%;
+  /* 1920x700 ratio */
+  aspect-ratio: 1920 / 700;
+  background-image: url("./images/hero_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* --------- Breakpointlar --------- */
+
+/* Planshetlar va kichik laptoplar */
+@media (max-width: 992px) {
+  #HeroSection {
+    padding: 7vh 16px 32px;
+  }
+
+  .hero_text h1 {
+    font-size: clamp(2.8rem, 8vw, 4.5rem);
+  }
+
+  .hero_content {
+    border-radius: 14px;
+  }
+}
+
+/* Kichik planshet / katta telefon */
+@media (max-width: 768px) {
+  #HeroSection {
+    padding: 6vh 14px 28px;
+  }
+
+  .hero_text {
+    text-align: left;
+  }
+
+  .hero_text h1 {
+    font-size: clamp(2.4rem, 9vw, 3.5rem);
+  }
+
+  .hero_content {
+    aspect-ratio: 16 / 9; /* vertikal ekranlarda biroz balandroq ko‘rinish uchun */
+  }
+}
+
+/* Telefonlar */
+@media (max-width: 480px) {
+  #HeroSection {
+    padding: 5vh 12px 24px;
+    gap: 16px;
+  }
+
+  .hero_text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero_content {
+    border-radius: 10px;
+  }
+}
