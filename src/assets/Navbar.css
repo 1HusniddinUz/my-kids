@@ -2,7 +2,7 @@
 
 :root {
   --nav-height: 64px;
-  --nav-max-width: 1440px;
+  --nav-max-width: 1200px;
   --nav-transition: 260ms ease;
   --nav-bg-blur: #b18050;
   --nav-link-accent: #6366f1;

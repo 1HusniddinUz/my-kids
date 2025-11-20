@@ -84,7 +84,7 @@ const Navbar = () => {
                 className={navLinkClass}
                 onClick={handleLinkClick}
               >
-                home
+                {t(`home`)}
               </NavLink>
             </li>
 
@@ -165,7 +165,7 @@ const Navbar = () => {
                 className={navLinkClass}
                 onClick={handleLinkClick}
               >
-                about
+                {t(`about`)}
               </NavLink>
             </li>
 
@@ -176,7 +176,7 @@ const Navbar = () => {
                 className={navLinkClass}
                 onClick={handleLinkClick}
               >
-                contact
+                {t(`contact`)}
               </NavLink>
             </li>
 
