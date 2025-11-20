@@ -117,7 +117,7 @@ const Navbar = () => {
               <ul className={`dropdown-menu ${isMarketOpen ? "show" : ""}`}>
                 <li>
                   <a
-                    href="https://www.ozon.ru/product/suzane-ruchnoy-raboty-3119456542/?oos_search=false"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={handleLinkClick}
@@ -127,7 +127,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href="https://uzum.uz/uz/product/uchburchak-shakldagi-qol-2119614"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={handleLinkClick}
@@ -137,7 +137,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.wildberries.ru/catalog/622433138/detail.aspx?targetUrl=GP"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={handleLinkClick}
@@ -147,7 +147,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href="https://market.yandex.uz/card/suzane-ruchnoy-raboty-interyernyy-tekstil-premium-klassa-osnova-vypolnena-iz-atlasa-a-niti-vyshivki--100-shelk/4769197220?businessId=216503443&showOriginalKmEmptyOffer=1&ogV=-6"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={handleLinkClick}
