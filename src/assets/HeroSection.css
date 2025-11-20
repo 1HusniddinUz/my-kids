@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 #HeroSection {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   box-sizing: border-box;
   padding: 10vh 0px 40px 0;
   display: flex;
@@ -19,8 +19,8 @@
 }
 
 .hero_text h1 {
-  font-family: "Tangerine", cursive;
-  font-weight: 700;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
   font-style: normal;
   /* responsiv font-size */
   font-size: 10rem;
@@ -80,8 +80,9 @@
 /* Telefonlar */
 @media (max-width: 480px) {
   #HeroSection {
-    padding: 5vh 12px 24px;
+    padding: 10vh 12px 24px;
     gap: 16px;
+    height: 50vh;
   }
 
   .hero_text h1 {

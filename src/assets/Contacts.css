@@ -19,8 +19,8 @@
 
 .contact_text h2 {
   z-index: 1;
-  font-family: "Tangerine", cursive;
-  font-weight: 700;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
   font-style: normal;
   /* responsiv font-size */
   font-size: 10rem;
@@ -113,6 +113,9 @@
   }
   .map_wrapper iframe {
     height: 280px;
+  }
+  .contact_text h2 {
+    font-size: 4rem;
   }
 }
 .location_box {

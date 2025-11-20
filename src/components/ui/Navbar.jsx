@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/Navbar.css";
 import { useTranslation } from "react-i18next";
-
+import logo from "../../assets/images/logo.png"
 const Navbar = () => {
   const [isBlurred, setIsBlurred] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,7 +58,7 @@ const Navbar = () => {
       <div className="container">
         <div className="logo_box">
           <NavLink to="/" className={navLinkClass} onClick={handleLinkClick}>
-            <h1>My Kids</h1>
+            <img src={logo} alt="MY KIDS LOGOTIP" loading="lazy" />
           </NavLink>
         </div>
 

@@ -1,47 +1,51 @@
-import React from "react";
+
 import "../assets/Contacts.css";
+import { useTranslation } from "react-i18next";
 
 const Contacts = () => {
+
+    const { t } = useTranslation();
+
   return (
     <section id="Contacts" className="contacts">
       <div className="container contacts-inner">
         <div className="contact_text">
-          <h2>Let&apos;s Work Together</h2>
-          <p>
+          <h2>{t(`contactH2Title`)}</h2>
+          {/* <p>
             Ready to bring your vision to life? Let&apos;s connect and create
             something extraordinary together!
-          </p>
+          </p> */}
         </div>
 
         <form className="contact_form">
           {/* Name */}
           <div className="form_group">
-            <label htmlFor="firstName">Name *</label>
+            <label htmlFor="firstName">{t(`nameInput`)}</label>
             <div className="name_row">
               <input
                 type="text"
                 id="firstName"
                 name="firstName"
-                placeholder="First Name"
+                placeholder={t(`firstNamePlaceholder`)}
               />
               <input
                 type="text"
                 id="lastName"
                 name="lastName"
-                placeholder="Last Name"
+                placeholder={t(`lastNamePlaceholder`)}
               />
             </div>
           </div>
 
           {/* Email */}
           <div className="form_group">
-            <label htmlFor="email">Email *</label>
+            <label htmlFor="email">{t(`emailInput`)}</label>
             <input type="email" id="email" name="email" placeholder="" />
           </div>
 
           {/* Message */}
           <div className="form_group">
-            <label htmlFor="message">Message *</label>
+            <label htmlFor="message">{t(`messageInput`)}</label>
             <textarea
               id="message"
               name="message"
@@ -52,15 +56,15 @@ const Contacts = () => {
 
           <div className="form_actions">
             <button type="submit" className="contact_btn">
-              Submit
+              {t(`submitBtn`)}
             </button>
           </div>
         </form>
       </div>
 
       <div className="location_box">
-        <h3>Our Location</h3>
-        <p>Buxoro shahar Ko‘kaldosh MFY, Xo‘ja Tabband ko‘chasi 11a-uy</p>
+        <h3>{t(`contactH2`)}</h3>
+        <p>{t(`contactAddress`)}</p>
 
         <div className="map_wrapper">
           <iframe

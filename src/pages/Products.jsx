@@ -156,7 +156,7 @@ const Products = () => {
                     {formatPrice(item.price)}
                   </span>
                   <button className="product-btn" type="button">
-                    Batafsil
+                    {t(`productBtn`)}
                   </button>
                 </div>
               </div>

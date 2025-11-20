@@ -1,7 +1,6 @@
 const translationsUz = {
   // Navbar
   home: `Bosh sahifa`,
-  products: `Mahsulotlar`,
   about: `Biz haqimizda`,
   contact: `Bog'lanish uchun`,
 
@@ -55,14 +54,26 @@ const translationsUz = {
     name: `Vilur ipidan sumka`,
     info: `Bolalar uchun mo‘ljallangan yumshoq vilur ipidan to‘qilgan kichik sumka. Kundalik mayda buyumlar, sochiq yoki sevimli o‘yinchoqni solib yurish uchun qulay aksessuar.`,
   },
-
+  productBtn: `Batafsil`,
   // About Us (hozircha o‘zgartirmay turdim)
-  artist: `SHARIPOVA SAYYORA`,
-  jobInfo: `Ustoz shogird davomchisi`,
+  aboutH3: `Hunarmandchilik ehtirom bilan uchrashadi`,
+  jobInfo: `Biz «MY KIDS». Bolalar uchun sifatli va qulay kiyim-kechaklar ishlab chiqaruvchi mahalliy brendmiz.`,
   job: `An’anaviy suzane va milliy bezakli buyumlar bo‘yicha ustoz hunarmand`,
-  artistStory: `Sharipova Sayyora 40 yildan ortiq vaqt davomida an’anaviy o‘zbek suzanechilik san’ati, milliy naqshlar va bezakli matolarni qo‘lda tiklash bilan shug‘ullanib keladi. Uning ijodida bolalik xotiralari, oilaviy qadriyatlar va milliy an’analar uyg‘unlashib, har bir naqsh uy bekalarining didi va milliy ruhini o‘zida mujassam etadi.
+  artistStory: `«MY KIDS» brendi o‘z faoliyatini 2014 yildan boshlab, bolalar uchun zamonaviy va qulay kiyim-kechaklar ishlab chiqarishga ixtisoslashgan. Asosiy yo‘nalishimiz sport uslubidagi kostyumlar (sportivka), pijamalar, shortiklar va futbolkalar kabi har kuni kiyishga mos, puxta va ishonchli mahsulotlardan iborat.
 
-Mehnat faoliyati davomida u ko‘plab uylar, madaniy maskanlar va mehmonxonalarning interyerini suzane va milliy bezakli buyumlar bilan boyitgan. Asarlari mahalliy ko‘rgazmalar hamda hunarmandchilik festivallarida muntazam namoyish etilib, bir necha marotaba faxriy yorliq va diplomlar bilan taqdirlangan. Har bir buyum qo‘lda, har bir chokiga alohida e’tibor qaratilgan holda tayyorlanib, egasining uyiga iliqlik, nafis bezak va o‘ziga xos ruh olib kirishini ko‘zda tutadi.`,
+Bizning maqsadimiz bolalarga ham shahar uslubiga mos, ham uy sharoitida o‘zini erkin his qiladigan, sifatli va xavfsiz kiyimlarni taklif etishdir. Har bir model bolalar yoshi, faolligi va kundalik ehtiyojlarini inobatga olgan holda, zamonaviy dizayn va amaliylik uyg‘unligida ishlab chiqiladi.`,
+    aboutBtn: `Biz bilan bog'lanish`,
+
+// Contact Us
+    contactH2Title: `Biz bilan bog'lanish`,
+    nameInput: `Ismingiz *`,
+    firstNamePlaceholder: `Ismingiz`,
+    lastNamePlaceholder: `Familiyangiz`,
+    emailInput: `Email manzilingiz *`,
+    messageInput: `Xabaringiz *`,
+    submitBtn: `Yuborish`,
+    contactH2: `Bizning  manzil`,
+    contactAddress: `Buxoro shahar Ko‘kaldosh MFY, Xo‘ja Tabband ko‘chasi 11a-uy`,
 };
 
 export default translationsUz;
