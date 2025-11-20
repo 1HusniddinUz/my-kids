@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- ========================================================= -->
+    <!-- PRIMARY SEO TAGS — MY-KIDS | Yosh Bolalar Kiyimlari Tikish -->
+    <!-- ========================================================= -->
+    <title>MY-KIDS | Yosh bolalar kiyimlari tikish va dizayn studiyasi</title>
+
+    <meta name="title" content="MY-KIDS | Yosh bolalar kiyimlari tikish va dizayn studiyasi" />
+    <meta name="description" content="MY-KIDS — Zamonaviy va qulay yosh bolalar kiyimlari tikish studiyasi. Ishonchli sifat, yumshoq materiallar va professional tikuvchilik. Buyurtma asosida tikamiz." />
+    <meta name="keywords" content="my-kids, my kids, bolalar kiyimlari, newborn kiyimlar, tikuvchilik, bolalar modasi, handmade kids clothes, Buxoro tikuvchi, buyurtma kiyimlar, baby clothes Uzbekistan" />
+    <meta name="author" content="KHALIMOV | t.me/xusni_axi" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#FD96AF" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.my-kids.uz/" />
+
+    <!-- ========================= -->
+    <!-- OPEN GRAPH (FACEBOOK)     -->
+    <!-- ========================= -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MY-KIDS" />
+    <meta property="og:url" content="https://www.my-kids.uz/" />
+    <meta property="og:title" content="MY-KIDS | Bolajonlar uchun maxsus tikilgan kiyimlar" />
+    <meta property="og:description" content="Yosh bolalar uchun sifatli, yumshoq, xavfsiz materiallardan tikilgan kiyimlar. MY-KIDS studiyasi sizning farzandingiz uchun eng yaxshi tanlov." />
+
+    <!-- PREVIEW IMAGE (1200x630 recommended) -->
+    <!-- TODO: PREVIEW IMAGE URL KIRITING — masalan: /images/preview.png -->
+    <meta property="og:image" content="./public/preview.png" />
+
+    <!-- ========================= -->
+    <!-- TWITTER CARD              -->
+    <!-- ========================= -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.my-kids.uz/" />
+    <meta name="twitter:title" content="MY-KIDS | Yosh bolalar kiyimlari tikish" />
+    <meta name="twitter:description" content="MY-KIDS — professional tikuvchilik studiyasi, bolajonlar uchun sifatli kiyimlar." />
+
+    <!-- TODO: PREVIEW IMAGE for Twitter -->
+    <meta name="twitter:image" content="./public/preview.png" />
+
+    <!-- ========================= -->
+    <!-- FAVICON                   -->
+    <!-- ========================= -->
+    <!-- TODO: LOGO URL KIRITING — masalan: /images/logo.png -->
+    <link rel="icon" type="image/png" href="public/preview.png" />
+    <link rel="apple-touch-icon" href="public/logo.png" />
+
+    <!-- ========================= -->
+    <!-- FONTS & ICONS             -->
+    <!-- ========================= -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <link
       rel="stylesheet"
@@ -20,10 +68,48 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>my-kids</title>
+    <!-- ========================================================= -->
+    <!-- STRUCTURED DATA (Google Rich Snippets) → LocalBusiness     -->
+    <!-- ========================================================= -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MY-KIDS",
+        "description": "Yosh bolalar uchun sifatli, yumshoq va xavfsiz kiyimlar tikish studiyasi.",
+        "url": "https://www.my-kids.uz",
+        "logo": "",
+        "image": "",
+        "email": "jumayevaa09@gmail.com",
+        "telephone": "+998914442100",
+        "sameAs": [
+          "https://t.me/Nabiyevnaaz",
+          "https://www.instagram.com/jumayevaazi"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "UZ",
+          "addressLocality": "Buxoro viloyati"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "39.774308",
+          "longitude": "64.425340"
+        },
+        "openingHours": "Mo-Sa 09:00-19:00",
+        "priceRange": "$$",
+        "brand": {
+          "@type": "Brand",
+          "name": "MY-KIDS"
+        }
+      }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- Vite/React Entry -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
