@@ -2,12 +2,15 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/Navbar.css";
 import { useTranslation } from "react-i18next";
-import logo from "../../assets/images/logo.png"
+import logo from "../../assets/images/logo.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Navbar = () => {
   const [isBlurred, setIsBlurred] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMarketOpen, setIsMarketOpen] = useState(false); // dropdown holati (faqat mobile/tablet)
-  const { t , i18n } = useTranslation(); // t ishlatmayapsan, faqat i18n kerak
+  const { t, i18n } = useTranslation(); // t ishlatmayapsan, faqat i18n kerak
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +28,16 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  // AOS initializatsiyasi
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 20,
+    });
   }, []);
 
   // Burger yopilganda dropdown ham yopilsin
@@ -51,12 +64,14 @@ const Navbar = () => {
 
   return (
     <nav
+      data-aos="fade-down"
+      data-aos-delay="50"
       className={`${isBlurred ? "scrolled" : ""} ${
         isMenuOpen ? "menu-open" : ""
       }`}
     >
       <div className="container">
-        <div className="logo_box">
+        <div className="logo_box" data-aos="fade-right" data-aos-delay="700">
           <NavLink to="/" className={navLinkClass} onClick={handleLinkClick}>
             <img src={logo} alt="MY KIDS LOGOTIP" loading="lazy" />
           </NavLink>
@@ -117,7 +132,7 @@ const Navbar = () => {
               <ul className={`dropdown-menu ${isMarketOpen ? "show" : ""}`}>
                 <li>
                   <a
-                    href=""
+                    href="https://uz.ozon.com/product/pizhama-3134251788/?oos_search=false"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={handleLinkClick}
@@ -127,7 +142,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="https://uzum.uz/uz/product/qizlar-uchun-yumshoq-trikotaj-pijama-57-2126751"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={handleLinkClick}
@@ -137,7 +152,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="https://www.wildberries.ru/catalog/633462061/detail.aspx?targetUrl=GP"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={handleLinkClick}
@@ -147,7 +162,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="https://market.yandex.uz/card/detskiy-teplyy-sportivnyy-kostyum-s-nachesom--dlya-malchikov-56-let/4775144064?do-waremd5=jhQ11OiC6SHGexO866d8QA&businessId=216503443&ogV=-7"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={handleLinkClick}
@@ -181,7 +196,7 @@ const Navbar = () => {
             </li>
 
             {/* MOBILE / TABLET LANG SELECT (navbar ichida) */}
-            <li className="lang_provider_mobile">
+            <li className="lang_provider_mobile" >
               <select
                 id="select"
                 onChange={(e) => i18n.changeLanguage(e.target.value)}
@@ -198,7 +213,7 @@ const Navbar = () => {
         </div>
 
         {/* DESKTOP LANG PROVIDER */}
-        <div className="lang_provider">
+        <div className="lang_provider" data-aos="fade-left" data-aos-delay="700">
           <select
             id="select"
             onChange={(e) => i18n.changeLanguage(e.target.value)}

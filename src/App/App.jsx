@@ -13,6 +13,9 @@ import translationsEn from "../locales/translationsEn";
 import About from "../pages/About"
 import Contacts from "../pages/Contacts";
 import Footer from "../components/layout/Footer";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
   i18n.use(initReactI18next).init({
     resources: {

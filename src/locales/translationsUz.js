@@ -56,7 +56,7 @@ const translationsUz = {
   },
   productBtn: `Batafsil`,
   // About Us (hozircha o‘zgartirmay turdim)
-  aboutH3: `Hunarmandchilik ehtirom bilan uchrashadi`,
+  aboutH3: `Qulaylikning kichkina formulasi`,
   jobInfo: `Biz «MY KIDS». Bolalar uchun sifatli va qulay kiyim-kechaklar ishlab chiqaruvchi mahalliy brendmiz.`,
   job: `An’anaviy suzane va milliy bezakli buyumlar bo‘yicha ustoz hunarmand`,
   artistStory: `«MY KIDS» brendi o‘z faoliyatini 2014 yildan boshlab, bolalar uchun zamonaviy va qulay kiyim-kechaklar ishlab chiqarishga ixtisoslashgan. Asosiy yo‘nalishimiz sport uslubidagi kostyumlar (sportivka), pijamalar, shortiklar va futbolkalar kabi har kuni kiyishga mos, puxta va ishonchli mahsulotlardan iborat.

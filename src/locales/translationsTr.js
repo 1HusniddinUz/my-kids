@@ -53,7 +53,7 @@ const translationsTr = {
 
 
   productBtn: `Ayrıntılar`,
-  aboutH3: "Zanaat tutku ile buluşuyor",
+  aboutH3: "Kolaylık için küçük bir formül",
   jobInfo: "Biz MY KIDS — kaliteli ve rahat çocuk giyim üreten yerel bir markayız.",
   job: "Geleneksel nakış ustası",
   artistStory: `MY KIDS markası 2014’ten beri modern ve rahat çocuk giyim üretmektedir. Ürünlerimiz arasında spor takımlar, pijamalar, şortlar ve tişörtler bulunmaktadır.

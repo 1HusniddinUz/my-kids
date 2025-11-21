@@ -54,7 +54,7 @@ const translationsFr = {
   },
 
   productBtn: `Détails`,
-  aboutH3: "L’artisanat rencontre la passion",
+  aboutH3: "Une petite formule pour plus de commodité",
   jobInfo: "Nous sommes MY KIDS — une marque locale de vêtements pour enfants.",
   job: "Maître artisan de broderie traditionnelle",
   artistStory: `Depuis 2014, MY KIDS crée des vêtements modernes et confortables pour enfants. Notre gamme comprend des ensembles sportifs, pyjamas, shorts et t-shirts adaptés au quotidien.

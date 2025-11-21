@@ -56,7 +56,7 @@ const translationsEn = {
 
   productBtn: `Details`,
   // About Us
-  aboutH3: "Craftsmanship Meets Devotion",
+  aboutH3: "A small formula for convenience",
   jobInfo: "We are MY KIDS — a local brand producing quality and comfortable children's clothing.",
   job: "Master artisan of traditional embroidery and handcrafted goods",
   artistStory: `The MY KIDS brand has been creating modern and comfortable children's clothing since 2014. Our main products include sports sets, pajamas, shorts, and T-shirts designed for everyday wear with durability and comfort in mind.

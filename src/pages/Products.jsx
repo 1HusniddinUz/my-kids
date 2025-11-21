@@ -24,6 +24,15 @@ import s1 from "../assets/images/s1.jpg";
 import s2 from "../assets/images/s2.jpg";
 import s3 from "../assets/images/s3.jpg";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 700,
+  easing: "ease-out-cubic",
+  once: true,
+  offset: 20,
+});
 const formatPrice = (price) =>
   price.toLocaleString("uz-UZ", {
     style: "currency",
@@ -122,18 +131,26 @@ const Products = () => {
   return (
     <section id="Products" className="products">
       <div className="products-header">
-        <h2>{t("productH3")}</h2>
-        <p>{t("productsP")}</p>
+        <h2 data-aos="fade-up" data-aos-duration="600">
+          {t("productH3")}
+        </h2>
+        <p data-aos="fade-up" data-aos-duration="700">
+          {t("productsP")}
+        </p>
       </div>
 
       <div className="products-grid">
         {productData.slice(0, visibleCount).map((item) => {
           const activeIndex = currentImageIndex[item.id] ?? 0;
-          const activeImage =
-            item.images[activeIndex] || item.images[0];
+          const activeImage = item.images[activeIndex] || item.images[0];
 
           return (
-            <article className="product-card" key={item.id}>
+            <article
+              className="product-card"
+              key={item.id}
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
               <div
                 className="product-image-wrapper"
                 onMouseEnter={() =>
@@ -171,6 +188,8 @@ const Products = () => {
             type="button"
             className="toggle-btn primary"
             onClick={handleShowMore}
+            data-aos="fade-up"
+            data-aos-duration="600"
           >
             {t("productMore")}
           </button>
@@ -181,6 +200,8 @@ const Products = () => {
             type="button"
             className="toggle-btn secondary"
             onClick={handleShowLess}
+            data-aos="fade-up"
+            data-aos-duration="300"
           >
             {t("productClose")}
           </button>
